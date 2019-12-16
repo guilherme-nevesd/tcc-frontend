@@ -8,7 +8,7 @@ const bandeiras = ['Bandeira Verde',
                   ]
 
 export default function CardGasto() {
-  const socket = io('localhost:3333');
+  const socket = io('https://tcc-backend-energyadmin.herokuapp.com');
   const [tensao, setTensao] = useState('0')
   const [bandeira, setBandeira] = useState('---')
 

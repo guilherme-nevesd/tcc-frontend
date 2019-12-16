@@ -4,7 +4,7 @@ import io from 'socket.io-client'
 export default function CardRealTime() {
   const [corrente, setCorrente] = useState('0.0')
   const [potencia, setPotencia] = useState('')
-  const socket = io('localhost:3333');
+  const socket = io('https://tcc-backend-energyadmin.herokuapp.com');
   var fatorCorrente = 0.094488189;  
   var fator5s = 5/3600;
   

@@ -4,7 +4,7 @@ import HighchartsReact from 'highcharts-react-official';
 import io from 'socket.io-client'
 
 export default function GraficoDashboard() {
-  const socket = io('localhost:3333');
+  const socket = io('https://tcc-backend-energyadmin.herokuapp.com');
   const fator5s = 5/3600;
 
   useEffect(() => {  

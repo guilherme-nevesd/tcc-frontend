@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import io from 'socket.io-client'
 
 export default function Card() {
-  const socket = io('localhost:3333'); 
+  const socket = io('https://tcc-backend-energyadmin.herokuapp.com'); 
   const $ = window.$; 
 
   useEffect(() => {

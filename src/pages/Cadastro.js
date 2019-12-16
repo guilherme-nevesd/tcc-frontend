@@ -2,7 +2,7 @@ import React from 'react';
 import Form from '../components/Form.js'
 import TabelaCadastro from '../components/TabelaCadastro'
 import io from 'socket.io-client'
-const socket = io('localhost:3333');
+const socket = io('https://tcc-backend-energyadmin.herokuapp.com');
 
 export default function Cadastro() {
   return (
