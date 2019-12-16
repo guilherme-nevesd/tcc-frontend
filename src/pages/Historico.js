@@ -10,7 +10,7 @@ export default function Historico() {
   useEffect(() => {
     var mounted = true
     var getLeituras = async function(){
-      await axios.get('http://localhost:3333/leituras').then(response => {
+      await axios.get('https://tcc-backend-energyadmin.herokuapp.com/leituras').then(response => {
         // leituras = response.data
         if(mounted){
           setDadosCorrente(response.data)
@@ -19,7 +19,7 @@ export default function Historico() {
     }
 
     var getConsumo = async function(){
-      await axios.get('http://localhost:3333/consumos').then(response => {
+      await axios.get('https://tcc-backend-energyadmin.herokuapp.com/consumos').then(response => {
         // leituras = response.data
         if(mounted){
           setDadosConsumo(response.data)

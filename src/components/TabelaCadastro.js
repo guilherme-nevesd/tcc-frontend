@@ -7,7 +7,7 @@ export default function Tabela({dadosLeituras, dadosConsumos}) {
   useEffect(() => {
     var mounted = true
     var getCadastros = async function(){
-      await axios.get('http://localhost:3333/cadastros').then(response => {
+      await axios.get('https://tcc-backend-energyadmin.herokuapp.com/cadastros').then(response => {
         // leituras = response.data
         if(mounted){
           setCadastros(response.data)
